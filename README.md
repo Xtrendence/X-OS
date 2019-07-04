@@ -4,4 +4,5 @@ A cloud storage solution that simulates an operating system, complete with a fil
 **Default Login Details**
 
 **Username**: admin
+
 **Password**: admin
