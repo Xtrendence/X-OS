@@ -1,0 +1,380 @@
+:root {
+	--shadow-light:0 6px 15px rgba(40,40,40,0.08);
+	--shadow-dark:0 6px 15px rgba(40,40,40,0.2);
+	--shadow-darker:0 6px 15px rgba(40,40,40,0.4);
+	--font-family:"Helvetica Neue", "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+}
+body {
+	background:rgb(0,0,0); 
+}
+input::placeholder {
+	color:rgb(150,150,150);
+}
+
+.navbar {
+	background:rgba(0,0,0,0.8);
+}
+.navbar-item {
+	color:rgb(245,245,245);
+}
+.navbar-subitem {
+	color:rgb(245,245,245);
+}
+.navbar-icon svg {
+	fill:rgb(245,245,245);
+}
+#desktop .navbar-item:hover, #desktop .navbar-icon:hover, .navbar-item.active, .navbar-icon.active {
+	background:rgb(0,125,255);
+}
+#desktop .navbar-subitem:hover {
+	background:rgb(0,150,255);
+}
+.navbar-menu {
+	background:rgba(0,0,0,0.6);
+}
+#desktop .navbar-battery-wrapper:hover, .navbar-battery-wrapper.active {
+	background:rgb(0,125,255);
+}
+.navbar-battery-wrapper .bolt-icon, .navbar-battery-wrapper .backward-icon {
+	fill:rgb(245,245,245);
+}
+.navbar-battery-foreground {
+	background:rgb(0,100,255);
+	background:-webkit-linear-gradient(to right, rgb(0,100,255), rgb(0,200,255));
+	background:linear-gradient(to right, rgb(0,100,255), rgb(0,200,255));
+}
+.navbar-battery-background {
+	background:rgb(40,40,40);
+	border-color:rgb(245,245,245);
+}
+
+.upload-menu {
+	background:rgba(0,0,0,0.9);
+}
+.upload-overlay-label {
+	color:rgba(245,245,245,0.7);
+	border-color:rgba(245,245,245,0.7);
+	background:rgba(255,255,255,0.1);
+}
+#desktop .upload-overlay:hover .upload-overlay-label {
+	border-color:rgba(245,245,245,1);
+	background:rgba(255,255,255,0.15);
+	color:rgba(245,245,245,1);
+}
+.upload-file-wrapper:nth-of-type(odd) {
+	background:rgba(0,0,0,0.2);
+}
+.upload-file-name {
+	background:rgb(60,60,60);
+	color:rgb(245,245,245);
+}
+.upload-file-type {
+	background:rgb(60,60,60);
+	color:rgb(245,245,245);
+}
+.upload-file-size {
+	background:rgb(60,60,60);
+	color:rgb(245,245,245);
+}
+.upload-file-remove {
+	background:rgb(60,60,60);
+	color:rgb(245,245,245);
+}
+#desktop .upload-file-remove:hover {
+	background:rgb(0,150,255);
+}
+.upload-file-progress-foreground {
+	background:rgb(0,100,255);
+	background:-webkit-linear-gradient(to right, rgb(0,100,255), rgb(0,200,255));
+	background:linear-gradient(to right, rgb(0,100,255), rgb(0,200,255));
+}
+.upload-file-progress-background {
+	background:rgb(60,60,60);
+}
+.upload-actions {
+	border-color:rgba(245,245,245,0.1);
+}
+.upload-cancel {
+	background:rgb(60,60,60);
+	color:rgb(245,245,245);
+}
+#desktop .upload-cancel:hover {
+	background:rgb(0,150,255);
+}
+.upload-count {
+	background:rgb(60,60,60);
+	color:rgb(245,245,245);
+}
+.upload-submit {
+	background:rgb(100,100,100);
+	color:rgb(245,245,245);
+}
+#desktop .upload-submit:hover {
+	background:rgb(0,150,255);
+}
+
+.notification-menu {
+	background:rgba(0,0,0,0.7);
+}
+.notification-clear {
+	background:rgb(230,150,0);
+	background:-webkit-linear-gradient(to right, rgb(230,150,0), rgb(230,100,0));
+	background:linear-gradient(to right, rgb(230,150,0), rgb(230,100,0));
+}
+.notification-top {
+	background:rgb(0,0,0);
+}
+.notification-title {
+	color:rgb(245,245,245);
+}
+.notification-remove {
+	background:rgb(230,50,50);
+}
+.notification-bottom {
+	background:rgb(20,20,20);
+}
+.notification-text {
+	color:rgb(200,200,200);
+}
+.notification-date-wrapper {
+	background:rgb(10,10,10);
+}
+.notification-date {
+	color:rgb(150,150,150);
+}
+
+.main-wrapper {
+	background:#240b36;
+	background:-webkit-linear-gradient(to right, #240b36, #c31432);
+	background:linear-gradient(to right, #240b36, #c31432);
+}
+
+.activity-window {
+	box-shadow:var(--shadow-darker);
+	border-color:rgba(100,100,100,0.5);
+}
+.activity-window-top {
+	background:rgba(0,0,0,0.8);
+}
+.activity-window-bottom {
+	background:rgba(0,0,0,0.9);
+}
+.activity-close {
+	background:rgb(150,150,150);
+}
+.activity-hide {
+	background:rgb(150,150,150);
+}
+.activity-window.front .activity-close  {
+	background:rgb(230,50,50);
+}
+.activity-window.front .activity-hide {
+	background:rgb(230,150,0);
+}
+.activity-title {
+	color:rgb(150,150,150);
+}
+.activity-window.front .activity-title {
+	color:rgb(245,245,245);
+}
+.activity-text {
+	color:rgb(245,245,245);
+}
+.activity-window-bottom::-webkit-scrollbar-track, .settings-sidebar::-webkit-scrollbar-track, .settings-pane::-webkit-scrollbar-track, .upload-list::-webkit-scrollbar-track, .navmod-sidebar::-webkit-scrollbar-track, .navmod-pane::-webkit-scrollbar-track, .popup-bottom.scroll::-webkit-scrollbar-track{
+	background:rgba(0,0,0,0.2)
+}
+.activity-window-bottom::-webkit-scrollbar-thumb, .settings-sidebar::-webkit-scrollbar-thumb, .settings-pane::-webkit-scrollbar-thumb, .upload-list::-webkit-scrollbar-thumb, .navmod-sidebar::-webkit-scrollbar-thumb, .navmod-pane::-webkit-scrollbar-thumb, .popup-bottom.scroll::-webkit-scrollbar-thumb {
+	background:rgba(245,245,245,0.8);
+}
+.activity-window-bottom::-webkit-scrollbar-thumb:hover, .settings-sidebar::-webkit-scrollbar-thumb:hover, .settings-pane::-webkit-scrollbar-thumb:hover, .upload-list::-webkit-scrollbar-thumb:hover, .navmod-sidebar::-webkit-scrollbar-thumb:hover, .navmod-pane::-webkit-scrollbar-thumb:hover, .popup-bottom.scroll::-webkit-scrollbar-thumb:hover {
+	background:rgba(245,245,245,0.6);
+}
+
+.settings-sidebar {
+	border-color:rgb(15,15,15);
+}
+.settings-category {
+	color:rgb(245,245,245);
+}
+#desktop .settings-category:hover, .settings-category.active {
+	background:rgb(0,150,255);
+}
+.settings-label {
+	background:none;
+	color:rgb(245,245,245);
+}
+.settings-button {
+	background:rgb(40,40,40);
+	color:rgb(245,245,245);
+}
+#desktop .settings-button:hover, .settings-button.active {
+	background:rgb(0,150,255);
+}
+.settings-textarea {
+	background:rgb(40,40,40);
+	color:rgb(245,245,245);
+}
+.settings-input {
+	background:rgb(40,40,40);
+	color:rgb(245,245,245);
+}
+.settings-storage-foreground {
+	background:rgb(0,100,255);
+	background:-webkit-linear-gradient(to right, rgb(0,100,255), rgb(0,200,255));
+	background:linear-gradient(to right, rgb(0,100,255), rgb(0,200,255));
+}
+.settings-storage-background {
+	background:rgb(40,40,40);
+}
+
+.navmod-window .back-icon {
+	background:rgb(150,150,150);
+	fill:rgb(0,0,0);
+}
+.activity-window.front .back-icon {
+	background:rgb(50,200,50);
+}
+.navmod-sidebar {
+	border-color:rgb(15,15,15);
+}
+.navmod-location {
+	color:rgb(245,245,245);
+	background:none;
+}
+#desktop .navmod-location:hover, .navmod-location.active {
+	background:rgb(0,150,255);
+}
+.navmod-empty-overlay {
+	background:none;
+	color:rgb(100,100,100);
+}
+.navmod-file-wrapper {
+}
+.navmod-file-wrapper .file-icon {
+	fill:rgb(245,245,245);
+}
+.navmod-file-wrapper .folder-icon {
+	fill:rgb(245,245,245);
+}
+.navmod-file-name {
+	background:rgb(40,40,40);
+	color:rgb(245,245,245);
+}
+#desktop .navmod-file-wrapper:hover .navmod-file-name, .navmod-file-wrapper.active .navmod-file-name, #desktop .navmod-file-wrapper:hover .navmod-file-date, .navmod-file-wrapper.active .navmod-file-date {
+	background:rgb(0,150,255);
+}
+#desktop .navmod-file-wrapper:hover .file-icon, #desktop .navmod-file-wrapper:hover .folder-icon, #desktop .navmod-file-wrapper.active .file-icon, #desktop .navmod-file-wrapper.active .folder-icon {
+	fill:rgb(0,150,255);
+}
+.navmod-menu {
+	background:rgba(0,0,0,0.9);
+	box-shadow:var(--shadow-darker);
+	border-color:rgba(100,100,100,0.7);
+}
+.navmod-menu-item {
+	color:rgb(245,245,245);
+}
+#desktop .navmod-menu-item:hover {
+	background:rgb(0,150,255);
+}
+
+.popup-overlay {
+	background:rgba(0,0,0,0.8);
+}
+.popup-wrapper {
+	background:none;
+}
+.popup-top {
+	background:rgba(0,0,0,0.8);
+	border-color:rgba(100,100,100,0.3);
+}
+.popup-bottom {
+	background:rgb(10,10,10);
+	border-color:rgba(100,100,100,0.2);
+}
+.popup-close {
+	background:rgb(230,50,50);
+}
+.popup-title {
+	color:rgb(245,245,245);
+}
+.popup-text {
+	background:rgba(245,245,245,0.1);
+	color:rgb(245,245,245);
+	border-color:rgb(245,245,245);
+}
+.popup-input {
+	background:rgb(30,30,30);
+	color:rgb(245,245,245);
+}
+.popup-submit {
+	color:rgb(245,245,245);
+	background:rgb(30,30,30);
+}
+#desktop .popup-submit:hover {
+	background:rgb(0,150,255);
+}
+
+.help-search {
+	color:rgb(245,245,245);
+	background:rgba(30,30,30,0.975);
+}
+.help-section {
+	background:rgb(20,20,20);
+}
+.help-title {
+	color:rgb(245,245,245);
+}
+.help-text {
+	color:rgb(245,245,245);
+}
+.help-action {
+	color:rgb(230,150,0);
+}
+
+.dock {
+	background:rgba(0,0,0,0.8);
+}
+.dock-name {
+	background:rgba(0,0,0,0.8);
+	color:rgb(245,245,245);
+}
+.dock-name:after {
+	border-color:rgba(0,0,0,0.8) transparent transparent transparent;
+}
+
+.login-wrapper {
+	background:#240b36;
+	background:-webkit-linear-gradient(to right, #240b36, #c31432);
+	background:linear-gradient(to right, #240b36, #c31432);
+}
+.login-response {
+	color:rgb(245,245,245);
+	background:rgb(0,0,0,0.7);
+}
+.login-account-wrapper .account-icon {
+	fill:rgb(245,245,245);
+}
+.login-account-wrapper span {
+	color:rgb(245,245,245);
+}
+.login-input-wrapper .clock-icon {
+	background:rgb(35,35,35);
+	fill:rgb(245,245,245);
+	border-color:rgb(35,35,35);
+}
+#desktop .login-input-wrapper .clock-icon:hover, .login-input-wrapper .clock-icon.active {
+	background:rgb(0,150,255);
+}
+.login-input {
+	background:rgb(30,30,30);
+	color:rgb(245,245,245);
+}
+.login-input-wrapper .back-icon {
+	background:rgb(35,35,35) !important;
+	fill:rgb(245,245,245);
+	border-color:rgb(35,35,35);
+}
+#desktop .login-input-wrapper .back-icon:hover {
+	background:rgb(0,150,255) !important;
+}

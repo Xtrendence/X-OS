@@ -1,0 +1,119 @@
+@media screen and (max-width:680px) {
+	.dock-item.applications {
+		display:none;
+	}
+}
+@media screen and (max-width:580px) {
+	.dock-item.songs {
+		display:none;
+	}
+}
+@media screen and (max-width:560px) {
+	.navbar-icon.connection {
+		display:none;
+	}
+}
+@media screen and (max-width:560px) {
+	.navbar-battery-wrapper {
+		display:none;
+	}
+}
+@media screen and (max-width:480px) {
+	.dock-item.movies {
+		display:none;
+	}
+}
+@media screen and (max-width:440px) {
+	.navbar {
+		height:50px;
+	}
+	.navbar-subitem {
+		height:40px;
+	}
+	.navbar-item.navmod {
+		display:none;
+	}
+	.navbar-icon {
+		width:50px;
+	}
+	.navbar-icon .upload-icon {
+		width:24px;
+		height:24px;
+		padding:13px 16px 13px 10px;
+	}
+	.navbar-icon .notification-icon {
+		width:24px;
+		height:24px;
+		padding:13px 15px 13px 11px;
+	}
+	.main-wrapper {
+		padding:50px 0;
+		height:calc(100% - 100px);
+	}
+	.activity-wrapper {
+		height:calc(100% - 50px - 85px);
+		top:50px;
+	}
+	.activity-window {
+		top:0;
+		left:0;
+	}
+	.notification-menu {
+		top:50px;
+	}
+	.upload-menu {
+		top:50px;
+		right:50px;
+	}
+	.activity-window-top {
+		height:40px;
+	}
+	.activity-window-bottom {
+		height:calc(100% - 40px);
+	}
+	.activity-close {
+		height:20px;
+		width:20px;
+		margin:10px 0 0 10px;
+	}
+	.activity-hide {
+		height:20px;
+		width:20px;
+		margin:10px 0 0 10px;
+	}
+	.navmod-window .back-icon {
+		height:18px;
+		width:18px;
+		padding:4px;
+		margin:7px 10px 0 40px;
+	}
+	.navmod-menu-item {
+		height:40px;
+	}
+	.activity-title {
+		line-height:40px;
+	}
+	.navmod-file-wrapper .file-icon {
+		width:45%;
+		margin:0 auto 10px auto;
+	}
+	.navmod-file-wrapper .folder-icon {
+		width:50%;
+		margin:5px auto 10px auto;
+	}
+}
+@media screen and (max-width:380px) {
+	.dock-item.pictures {
+		display:none;
+	}
+}
+@media screen and (max-width:340px) {
+	.navbar-item.file {
+		display:none;
+	}
+}
+@media screen and (max-width:280px) {
+	.dock-item.documents {
+		display:none;
+	}
+}
