@@ -55,7 +55,7 @@ function drop(event) {
 			var destination = $(event.target).text();
 		}
 		else if($(event.target).hasClass("folder")) {
-			var destination = $(event.target).parent().parent().parent().attr("data-location") + "/" + $(event.target).text();
+			var destination = $(event.target).parent().parent().parent().attr("data-location") + "/" + $(event.target).find(".navmod-file-name").text();
 		}
 		var id = event.dataTransfer.getData("id");
 		var type = event.dataTransfer.getData("type");
