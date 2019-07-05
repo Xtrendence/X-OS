@@ -271,7 +271,8 @@
 			}
 			$location = $_POST['location'];
 			$file_system = json_decode(file_get_contents("../source/cfg/file_system.config"), true);
-			$current_name = $file_system['name'];
+			$current_name = $file_system[$id]['name'];
+			$type = $file_system[$id]['type'];
 			if(strpos($current_name, ".") !== false) {
 				$parts = explode(".", $current_name);
 				$current_extension = "." . array_pop($parts);
@@ -283,6 +284,11 @@
 			foreach($file_system as $file_id => $info) {
 				if($info['location'] . "/" . $info['name'] == $location . "/" . $new_name . $extension) {
 					$exists = true;
+				}
+				if($type == "folder") {
+					if($info['location'] == $location . "/" . $current_name) {
+						$file_system[$file_id]['location'] = $location . "/" . $new_name;
+					}
 				}
 			}
 			if(!$exists) {
