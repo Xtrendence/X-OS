@@ -6,3 +6,5 @@ A cloud storage solution that simulates an operating system, complete with a fil
 **Username**: admin
 
 **Password**: admin
+
+Also, as much as I hate saying this, use Chrome for the best compatbility. Some features may not work on other browsers; especially the drag and drop features.
