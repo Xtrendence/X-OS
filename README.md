@@ -10,4 +10,4 @@ A cloud storage solution that simulates an operating system, complete with a fil
 
 Also, as much as I hate saying this, use Chrome for the best compatbility. Some features may not work on other browsers; especially the drag and drop features.
 
-![X:/OS](https://www.xtrendence.com/portfolio/projects/x-os/images/5.png)
+![X:/OS](https://i.imgur.com/ZQQPYko.jpg)
